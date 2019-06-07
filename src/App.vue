@@ -3,7 +3,7 @@
     <!-- nav bar -->
     <template>
   <!--Navbar-->
-  <mdb-navbar color="blue" dark>
+  <mdb-navbar color="black" dark>
     <!-- Navbar brand -->
     <mdb-navbar-brand href="https://mdbootstrap.com/">
       Navbar
@@ -15,7 +15,7 @@
         <mdb-nav-item href="#">Pricing</mdb-nav-item>
         <!-- Dropdown -->
         <mdb-dropdown tag="li" class="nav-item">
-          <mdb-dropdown-toggle tag="a" navLink color="blue" slot="toggle" waves-fixed>Dropdown</mdb-dropdown-toggle>
+          <mdb-dropdown-toggle tag="a" navLink color="black" slot="toggle" waves-fixed>Dropdown</mdb-dropdown-toggle>
           <mdb-dropdown-menu>
             <mdb-dropdown-item>Action</mdb-dropdown-item>
             <mdb-dropdown-item>Another action</mdb-dropdown-item>
@@ -36,7 +36,7 @@
   
 <template>
   <!-- Footer -->
-  <mdb-footer color="blue" class="font-small pt-0 foot">
+  <mdb-footer color="black" class="font-small pt-0 foot">
     <mdb-container>
       <mdb-row>
         <mdb-col md="12">
@@ -90,7 +90,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: Open Sans Condensed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -99,8 +99,9 @@ export default {
 }
 
 .foot{
-  margin-top: 300px !important;
+  margin-top: 0px !important;
   text-align: center !important;
 }
+
 
 </style>
