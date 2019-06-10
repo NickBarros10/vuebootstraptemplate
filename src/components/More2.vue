@@ -38,10 +38,10 @@ export default {
       mdbCol,
       mdbFooter
     },
-  name: 'HelloWorld',
+  name: 'More2',
   data () {
     return {
-      msg: 'A Mountain Adventure'
+      msg: 'Our Mission'
     };
   }
 }
