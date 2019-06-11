@@ -17,7 +17,7 @@ export default new Router({
       component: HelloWorld,
     },
     {
-      path: '/Journeys',
+      path: '/Reviews',
       name: 'Web2',
       component: Web2,
     },

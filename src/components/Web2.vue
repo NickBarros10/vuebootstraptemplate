@@ -3,16 +3,31 @@
     <img class="logo" src="../assets/logo.png">
     <h1 class="Welcome">{{ msg }}</h1>
     <mdb-container>
-    <img class="mountain" src="../assets/mountains.png">
+   <div class="view overlay zoom">
+    <img src="../assets/hiking.png" class="img-fluid mountain " alt="smaple image">
+    <div class="mask flex-center">
+    </div>
+</div>
 
   </mdb-container>
 
   <template>
   <mdb-container class="font">
     <mdb-row>
-      <mdb-col col="4"><h3><u>Mountains</u></h3><p class="font">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p></mdb-col>
-      <mdb-col col="4"><h3><u>Hills</u></h3><p class="font">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p></mdb-col>
-      <mdb-col col="4"><h3><u>Mounts</u></h3><p class="font">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p></mdb-col>
+      <mdb-col col="4">
+        <h3><u>John Doe</u></h3>
+        <img class="profile" src="../assets/doe.png">
+        <h2>5 out of 5</h2>
+        <p class="font">I cannot express the abundant amount of joy and freedom I experienced during my hiking expedition! It was undoubtedly the greatest time of my life! My favorite part was when our friendly guide showed me and my hiking crew the wonderful sights of the mighty mountain we were hiking. However, this was only a detail from the adventure in its entirity. That part was included in the Medium Package which I purchased. I'd say it was the package with most value, because although the mega package offers buyers more equipment and features for the expedition, I personally found it a little pricy. Nevertheless, I would definitely do this again, perhaps once every year, and I would recommend this to anyone that's feeling like they need a peaceful break. </p>
+      </mdb-col>
+      <mdb-col col="4"><h3><u>Lily Fee</u></h3>
+        <img class="profile" src="../assets/lily.png">
+        <h2>5 out of 5</h2>
+        <p class="font">I cannot express the abundant amount of joy and freedom I experienced during my hiking expedition! It was undoubtedly the greatest time of my life! My favorite part was when our friendly guide showed me and my hiking crew the wonderful sights of the mighty mountain we were hiking. However, this was only a detail from the adventure in its entirity. That part was included in the Medium Package which I purchased. I'd say it was the package with most value, because although the mega package offers buyers more equipment and features for the expedition, I personally found it a little pricy. Nevertheless, I would definitely do this again, perhaps once every year, and I would recommend this to anyone that's feeling like they need a peaceful break.</p></mdb-col>
+      <mdb-col col="4"><h3><u>Jack Black</u></h3>
+        <img class="profile" src="../assets/doug.png">
+        <h2>5 out of 5</h2>
+        <p class="font">I cannot express the abundant amount of joy and freedom I experienced during my hiking expedition! It was undoubtedly the greatest time of my life! My favorite part was when our friendly guide showed me and my hiking crew the wonderful sights of the mighty mountain we were hiking. However, this was only a detail from the adventure in its entirity. That part was included in the Medium Package which I purchased. I'd say it was the package with most value, because although the mega package offers buyers more equipment and features for the expedition, I personally found it a little pricy. Nevertheless, I would definitely do this again, perhaps once every year, and I would recommend this to anyone that's feeling like they need a peaceful break.</p></mdb-col>
     </mdb-row>
   </mdb-container>
 </template>
@@ -41,7 +56,7 @@ export default {
   name: 'Web2',
   data () {
     return {
-      msg: 'Hike Hike Hike'
+      msg: 'Customer Reviews'
     };
   }
 }
@@ -49,6 +64,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+  .profile{
+    width: 100%;
+  }
+
 h3 {
   padding-top: 20px;
   padding-bottom: 30px;
@@ -106,7 +126,7 @@ p{
 
 .mountain{
   width: 100%;
-  margin-top: 0%;
+  margin-top: 2%;
   margin-bottom: 2%;
 }
 

@@ -3,19 +3,47 @@
     <img class="logo" src="../assets/logo.png">
     <h1 class="Welcome">{{ msg }}</h1>
     <mdb-container>
-    <img class="mountain" src="../assets/mountains.png">
+      <div class="view overlay zoom">
+    <img src="../assets/take-a-hike-day.png" class="img-fluid mountain hike" alt="smaple image">
+    <div class="mask flex-center">
+    </div>
+</div>
 
   </mdb-container>
 
-    <template>
-  <mdb-container class="font">
-    <mdb-row>
-      <mdb-col col="4"><h3><u>Mountains</u></h3><p class="font">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p></mdb-col>
-      <mdb-col col="4"><h3><u>Hills</u></h3><p class="font">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p></mdb-col>
-      <mdb-col col="4"><h3><u>Mounts</u></h3><p class="font">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p></mdb-col>
-    </mdb-row>
-  </mdb-container>
-</template>
+<mdb-container>
+<table class="table">
+  <thead class="teal lighten-2">
+    <tr>
+      <th scope="col">Age Range</th>
+      <th scope="col">Mini Package</th>
+      <th scope="col">Medium Package</th>
+      <th scope="col">Mega Package</th>
+    </tr>
+  </thead>
+  <tbody class="black white-text">
+    <tr>
+      <th scope="row">12-20</th>
+      <td>$125.00</td>
+      <td>$175.00</td>
+      <td>$225.00</td>
+    </tr>
+    <tr>
+      <th scope="row">21-54</th>
+      <td>$185.00</td>
+      <td>$235.00</td>
+      <td>$285.00</td>
+    </tr>
+    <tr>
+      <th scope="row">55-84</th>
+      <td>$155.00</td>
+      <td>$205.00</td>
+      <td>$255.00</td>
+    </tr>
+  </tbody>
+</table>
+</mdb-container>
+
 
 <mdb-container class="images">
 <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(54).jpg" class="img-fluid z-depth-1 picture-width images-margin" alt="1">
@@ -96,6 +124,7 @@ p{
 .images{
   height: 250px;
   margin-top: 50px;
+  position: unset;
 }
 
 .logo{
@@ -105,14 +134,18 @@ p{
 }
 
 .mountain{
-  width: 100%;
-  margin-top: 0%;
+  margin-top: 2%;
   margin-bottom: 2%;
 }
 
 .images-margin{
   margin-left: 3%;
   width: 45%;
+}
+
+.hike{
+  margin: auto !important;
+  margin-bottom: 2% !important;
 }
 
 @media only screen and (max-width: 1100px){

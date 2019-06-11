@@ -1,10 +1,15 @@
 <template>
   <div class="bg">
-    <img class="logo" src="../assets/logo.png">
+    <!--Zoom effect-->
+<img class="logo" src="../assets/logo.png">
     <h1 class="Welcome">{{ msg }}</h1>
     <mdb-container>
-    <img class="mountain" src="../assets/mountains.png">
-
+      <!--Zoom effect-->
+<div class="view overlay zoom">
+    <img src="../assets/mountains.png" class="img-fluid mountain " alt="smaple image">
+    <div class="mask flex-center">
+    </div>
+</div>
   </mdb-container>
 
     <template>
@@ -18,8 +23,8 @@
 </template>
 
 <mdb-container class="images">
-<img src="https://mdbootstrap.com/img/Photos/Slides/img%20(54).jpg" class="img-fluid z-depth-1 picture-width images-margin" alt="1">
-<img src="https://mdbootstrap.com/img/Photos/Slides/img%20(54).jpg" class="img-fluid z-depth-1 picture-width images-margin" alt="1">
+<img src="https://mdbootstrap.com/img/Photos/Slides/img%20(54).jpg" class="img-fluid picture-width images-margin" alt="1">
+<img src="https://mdbootstrap.com/img/Photos/Slides/img%20(54).jpg" class="img-fluid picture-width images-margin" alt="1">
 </mdb-container>
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
@@ -124,6 +129,19 @@ p{
 @media only screen and (max-width: 1100px){
   .mountain{
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  .images-margin{
+    width: 100%;
+    margin-bottom: 3%;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  .images{
+    height: 1000px;
   }
 }
 </style>

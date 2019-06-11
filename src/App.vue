@@ -3,9 +3,8 @@
     <!-- nav bar -->
     <template>
       <title>A Mountain Adventure</title>
-      <link rel="icon" href="http://atlas-content-cdn.pixelsquid.com/stock-images/pointer-computer-icon-B5mDxM2-600.jpg">
   <!--Navbar-->
-  <mdb-navbar color="black" dark>
+  <mdb-navbar class="fixed-top" color="black" dark>
     <!-- Navbar brand -->
     <mdb-navbar-brand to="/">
       <a class="navbar-brand">
@@ -15,7 +14,7 @@
     <mdb-navbar-toggler>
       <mdb-navbar-nav >
         <mdb-nav-item to="/">Home</mdb-nav-item>
-        <mdb-nav-item to="/Journeys">Journeys</mdb-nav-item>
+        <mdb-nav-item to="/Reviews">Reviews</mdb-nav-item>
         <mdb-nav-item to="/Pricing">Pricing</mdb-nav-item>
         <!-- Dropdown -->
         <mdb-dropdown tag="li" class="nav-item">
@@ -35,8 +34,9 @@
   </mdb-navbar>
 </template>
 
-    <router-view/>
-    <!-- </router-view> -->
+    <router-view style="margin-top: 3%">
+
+    </router-view>
       
   
 <template>
