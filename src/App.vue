@@ -16,15 +16,6 @@
         <mdb-nav-item to="/">Home</mdb-nav-item>
         <mdb-nav-item to="/Reviews">Reviews</mdb-nav-item>
         <mdb-nav-item to="/Pricing">Pricing</mdb-nav-item>
-        <!-- Dropdown -->
-        <mdb-dropdown tag="li" class="nav-item">
-          <mdb-dropdown-toggle tag="a" navLink color="black" slot="toggle" waves-fixed>More</mdb-dropdown-toggle>
-          <mdb-dropdown-menu>
-            <mdb-dropdown-item to="/OurStory">Our Story</mdb-dropdown-item>
-            <mdb-dropdown-item to="/OurMission">Our Mission</mdb-dropdown-item>
-            <mdb-dropdown-item to="/GoingUpward">Going Upward</mdb-dropdown-item>
-          </mdb-dropdown-menu>
-        </mdb-dropdown>
       </mdb-navbar-nav>
       <!-- Search form -->
       <mdb-form-inline>

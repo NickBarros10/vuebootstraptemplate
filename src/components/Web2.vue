@@ -1,6 +1,8 @@
 <template>
   <div class="bg">
+    <a href="/">
     <img class="logo" src="../assets/logo.png">
+    </a>
     <h1 class="Welcome">{{ msg }}</h1>
     <mdb-container>
    <div class="view overlay zoom">
@@ -20,7 +22,7 @@
         <h2>5 out of 5</h2>
         <p class="font">I cannot express the abundant amount of joy and freedom I experienced during my hiking expedition! It was undoubtedly the greatest time of my life! My favorite part was when our friendly guide showed me and my hiking crew the wonderful sights of the mighty mountain we were hiking. However, this was only a detail from the adventure in its entirity. That part was included in the Medium Package which I purchased. I'd say it was the package with most value, because although the mega package offers buyers more equipment and features for the expedition, I personally found it a little pricy. Nevertheless, I would definitely do this again, perhaps once every year, and I would recommend this to anyone that's feeling like they need a peaceful break. </p>
       </mdb-col>
-      <mdb-col col="4"><h3><u>Lily Fee</u></h3>
+      <mdb-col col="4"><h3><u>Lily McFee</u></h3>
         <img class="profile" src="../assets/lily.png">
         <h2>5 out of 5</h2>
         <p class="font">I cannot express the abundant amount of joy and freedom I experienced during my hiking expedition! It was undoubtedly the greatest time of my life! My favorite part was when our friendly guide showed me and my hiking crew the wonderful sights of the mighty mountain we were hiking. However, this was only a detail from the adventure in its entirity. That part was included in the Medium Package which I purchased. I'd say it was the package with most value, because although the mega package offers buyers more equipment and features for the expedition, I personally found it a little pricy. Nevertheless, I would definitely do this again, perhaps once every year, and I would recommend this to anyone that's feeling like they need a peaceful break.</p></mdb-col>
@@ -32,10 +34,6 @@
   </mdb-container>
 </template>
 
-<mdb-container class="images">
-<img src="https://mdbootstrap.com/img/Photos/Slides/img%20(54).jpg" class="img-fluid z-depth-1 picture-width images-margin" alt="1">
-<img src="https://mdbootstrap.com/img/Photos/Slides/img%20(54).jpg" class="img-fluid z-depth-1 picture-width images-margin" alt="1">
-</mdb-container>
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 
@@ -75,7 +73,7 @@ h3 {
 }
 p {
   color: #969696;
-  margin-bottom: 0;
+  margin-bottom: 5%;
   font-size: 14px;
 }
 
@@ -113,11 +111,6 @@ p{
   color: white;
 }
 
-.images{
-  height: 250px;
-  margin-top: 50px;
-}
-
 .logo{
   width: 20%;
   margin-top: 2%;
@@ -128,11 +121,6 @@ p{
   width: 100%;
   margin-top: 2%;
   margin-bottom: 2%;
-}
-
-.images-margin{
-  margin-left: 3%;
-  width: 45%;
 }
 
 @media only screen and (max-width: 1100px){

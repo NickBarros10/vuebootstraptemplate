@@ -1,23 +1,22 @@
 <template>
   <div class="bg">
-    <!--Zoom effect-->
-<img class="logo" src="../assets/logo.png">
+    <img class="logo" src="../assets/logo.png">
     <h1 class="Welcome">{{ msg }}</h1>
     <mdb-container>
-      <!--Zoom effect-->
-<div class="view overlay zoom">
+    <div class="view overlay zoom">
     <img src="../assets/mountains.png" class="img-fluid mountain " alt="smaple image">
     <div class="mask flex-center">
     </div>
 </div>
+
   </mdb-container>
 
     <template>
   <mdb-container class="font">
     <mdb-row>
-      <mdb-col col="4"><h3><u>Mountains</u></h3><p class="font">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p></mdb-col>
-      <mdb-col col="4"><h3><u>Hills</u></h3><p class="font">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p></mdb-col>
-      <mdb-col col="4"><h3><u>Mounts</u></h3><p class="font">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p></mdb-col>
+      <mdb-col col="4"><h3><u>Mountains</u></h3><p class="font">Our most popular natural feature for hiking are the mighty mountains! Mountains offer the most adventerous hiking experience because of their monstrous heights. There are actually various ways to scale up a mountain, but we at Adventerous Hiking always make sure to guide our customers through the most favorable routes up any mountain. Although mountains offer a wonderful experience in nature, it is important to take note of the dangers that mountains can possess. However, we at Adventerous Mountains make sure our guides are certified medics to take care of any injuries our customers might suffer from. If any serious injuries occur, we will investigate the case and work our best to finance any possible medical bills. Nevertheless, after 15 years of service, we at Adventerous Mountains have never let any customer to be significantly injured, and we take pride in always caring for our customers first. </p></mdb-col>
+      <mdb-col col="4"><h3><u>Hills</u></h3><p class="font">Our most popular natural feature for hiking are the mighty mountains! Mountains offer the most adventerous hiking experience because of their monstrous heights. There are actually various ways to scale up a mountain, but we at Adventerous Hiking always make sure to guide our customers through the most favorable routes up any mountain. Although mountains offer a wonderful experience in nature, it is important to take note of the dangers that mountains can possess. However, we at Adventerous Mountains make sure our guides are certified medics to take care of any injuries our customers might suffer from. If any serious injuries occur, we will investigate the case and work our best to finance any possible medical bills. Nevertheless, after 15 years of service, we at Adventerous Mountains have never let any customer to be significantly injured, and we take pride in always caring for our customers first.</p></mdb-col>
+      <mdb-col col="4"><h3><u>Mounts</u></h3><p class="font">Our most popular natural feature for hiking are the mighty mountains! Mountains offer the most adventerous hiking experience because of their monstrous heights. There are actually various ways to scale up a mountain, but we at Adventerous Hiking always make sure to guide our customers through the most favorable routes up any mountain. Although mountains offer a wonderful experience in nature, it is important to take note of the dangers that mountains can possess. However, we at Adventerous Mountains make sure our guides are certified medics to take care of any injuries our customers might suffer from. If any serious injuries occur, we will investigate the case and work our best to finance any possible medical bills. Nevertheless, after 15 years of service, we at Adventerous Mountains have never let any customer to be significantly injured, and we take pride in always caring for our customers first.</p></mdb-col>
     </mdb-row>
   </mdb-container>
 </template>
@@ -46,7 +45,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'A Mountain Adventure'
+      msg: 'Adventerous Hiking'
     };
   }
 }
@@ -120,11 +119,36 @@ p{
   width: 45%;
 }
 
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1400px){
   .logo{
     width: 40%;
+    margin-top: 4%;
   }
 }
+
+@media only screen and (max-width: 920px){
+  .logo{
+    width: 40%;
+    margin-top: 7%;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .logo{
+    width: 40%;
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .logo{
+    width: 40%;
+    margin-top: 13%;
+  }
+}
+
+
+
 
 @media only screen and (max-width: 1100px){
   .mountain{
@@ -139,9 +163,52 @@ p{
   }
 }
 
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1200px){
   .images{
-    height: 1000px;
+    height: 210px;
   }
 }
+
+@media only screen and (max-width: 1100px){
+  .images{
+    height: 875px;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .images{
+    height: 660px;
+  }
+}
+
+@media only screen and (max-width: 769px){
+  .images{
+    height: 660px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .images{
+    height: 495px;
+  }
+}
+
+@media only screen and (max-width: 566px){
+  .images{
+    height: 495px;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .images{
+    height: 460px;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .images{
+    height: 432px;
+  }
+}
+
 </style>

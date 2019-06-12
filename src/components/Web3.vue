@@ -1,10 +1,12 @@
 <template>
   <div class="bg">
+    <a href="/">
     <img class="logo" src="../assets/logo.png">
+    </a>
     <h1 class="Welcome">{{ msg }}</h1>
     <mdb-container>
       <div class="view overlay zoom">
-    <img src="../assets/take-a-hike-day.png" class="img-fluid mountain hike" alt="smaple image">
+    <img src="../assets/take-a-hike-day.png" class="img-fluid hike" alt="smaple image">
     <div class="mask flex-center">
     </div>
 </div>
@@ -44,12 +46,6 @@
 </table>
 </mdb-container>
 
-
-<mdb-container class="images">
-<img src="https://mdbootstrap.com/img/Photos/Slides/img%20(54).jpg" class="img-fluid z-depth-1 picture-width images-margin" alt="1">
-<img src="https://mdbootstrap.com/img/Photos/Slides/img%20(54).jpg" class="img-fluid z-depth-1 picture-width images-margin" alt="1">
-</mdb-container>
-
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 
 
@@ -57,7 +53,7 @@
 </template>
 
 <script>
-import { mdbFooter, mdbContainer, mdbRow, mdbCol} from 'mdbvue';
+import { mdbFooter, mdbContainer, mdbRow, mdbCol,} from 'mdbvue';
   
 export default {  
   components: {
@@ -81,11 +77,6 @@ h3 {
   padding-top: 20px;
   padding-bottom: 30px;
 }
-p {
-  color: #969696;
-  margin-bottom: 0;
-  font-size: 14px;
-}
 
 .picture-width{
   width: 50%;
@@ -100,7 +91,7 @@ p {
   background-image: url("../assets/mountain-path.png");
 
   /* Full height */
-  height: auto;
+  height: 100%;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -110,21 +101,8 @@ p {
   background-size: cover !important;
 }
 
-.font{
-  color: white;
-}
-
-p{ 
-  font-size: 20px;
-} 
 .Welcome{
   color: white;
-}
-
-.images{
-  height: 250px;
-  margin-top: 50px;
-  position: unset;
 }
 
 .logo{
@@ -138,14 +116,14 @@ p{
   margin-bottom: 2%;
 }
 
-.images-margin{
-  margin-left: 3%;
-  width: 45%;
-}
-
 .hike{
   margin: auto !important;
   margin-bottom: 2% !important;
+  margin-top: 2% !important;
+}
+
+.table{
+  margin-top: 2%;
 }
 
 @media only screen and (max-width: 1100px){
@@ -154,9 +132,4 @@ p{
   }
 }
 
-@media only screen and (max-width: 1100px){
-  .mountain{
-    width: 100%;
-  }
-}
 </style>
